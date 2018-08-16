@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".ModeActivity">
+
+    <RelativeLayout
+        android:id="@+id/playerTwo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:text="1 PLAYER"
+        android:scaleY="-1"
+        android:scaleX="-1"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:background="#33cc33">
+        <!--android:background="#ff1a1a"-->
+        <Button
+            android:id="@+id/playerTwoShapeButton"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:visibility="gone"
+            android:background="@drawable/o"
+            android:layout_centerInParent="true"/>
+        <Button
+            android:id="@+id/playerTwoLockInButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:layout_centerInParent="true"
+            android:text="Lock In"/>
+        <Button
+            android:id="@+id/playerTwoLose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff1a1a"
+            android:text="You Lose! LUL"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/playerTwoWin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#33cc33"
+            android:text="You Win!"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middleSection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:text="1 PLAYER"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:background="#ffffff">
+        <!--android:background="#ff1a1a"-->
+
+        <io.github.krtkush.lineartimer.LinearTimerView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:initialColor="#000000"
+            app:radius="10dp"
+            app:strokeWidth="2dp"/>
+
+        <TextView
+            android:id="@+id/playerOneScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/timer"
+            android:textColor="#000000"
+            android:layout_centerVertical="true"
+            android:layout_margin="80dp"
+            />
+        <TextView
+            android:id="@+id/playerTwoScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/timer"
+            android:textColor="#000000"
+            android:layout_centerVertical="true"
+            android:layout_margin="80dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/playerOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:text="2 PLAYER"
+        android:textSize="20sp"
+        android:background="#ff1a1a">
+        <Button
+            android:id="@+id/playerOneShapeButton"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:background="@drawable/o"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+        <Button
+            android:id="@+id/playerOneLockin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:layout_centerInParent="true"
+            android:text="Lock In"/>
+        <Button
+            android:id="@+id/playerOneWin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#33cc33"
+            android:text="You Win!"
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"/>
+        <Button
+            android:id="@+id/playerOneLose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff1a1a"
+            android:text="You Lose! LUL"
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
+

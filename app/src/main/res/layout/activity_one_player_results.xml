@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnePlayerResults"
+    android:background="#ff1a1a">
+
+    <TextView
+        android:id="@+id/gameOverTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="GAME OVER!"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/playerScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR SCORE:"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gameOverTextView"/>
+    <TextView
+        android:id="@+id/playerScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/playerScoreLabel"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/playerCriticism"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playerScore"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:text="You can do better!"/>
+
+    <TextView
+        android:id="@+id/highScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playerCriticism"
+        android:layout_centerInParent="true"
+        android:textColor="#ffffff"
+        android:layout_marginTop="50dp"
+        android:text="YOUR HIGH SCORE:"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/highScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/highScoreLabel"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/resultsButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/highScore"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/retryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Retry"
+            android:background="#000000"/>
+        <Button
+            android:id="@+id/tutorialButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Tutorial"
+            android:background="#000000"/>
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:background="#000000"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

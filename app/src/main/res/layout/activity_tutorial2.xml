@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tutorialBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33cc33"
+    tools:context=".Tutorial">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tutorial 2/5"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/instructions"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tutorialButton"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:layout_margin="30dp"
+        android:text="Tap outside 'X' when background is green"
+        />
+    <TextView
+        android:id="@+id/prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tutorialButton"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_margin="30dp"
+        android:text="TAP THE GREEN"/>
+
+
+    <Button
+        android:id="@+id/tutorialButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/x"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:layout_below="@+id/prompt"
+        android:layout_centerHorizontal="true"
+        android:text="BACK"/>
+
+    <Button
+        android:id="@+id/skipTutorialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backButton"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        android:padding="5dp"
+        android:text="Skip Tutorial" />
+
+
+</RelativeLayout>
